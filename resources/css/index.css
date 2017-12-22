@@ -3,9 +3,9 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-body {
+/* body {
   background-color: black;
-}
+} */
 
 li a {
   font-family: 'Open Sans', sans-serif;
@@ -13,7 +13,9 @@ li a {
   font-weight: bold;
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
     color: #399bd1;
     background-color: transparent;
 }
@@ -25,6 +27,21 @@ li a {
   padding: 11.85rem 0;
 }
 
+.button {
+  background-color: #399bd1;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  margin-top: 2.8rem;
+  width: 11.4rem;
+  padding: 1.3rem 0;
+}
+
+.button:hover {
+    box-shadow: 0, 0, 12px rgba(0, 0, 0, 0.9);
+}
+
+.button:active {
+    box-shadow: 0, 0, 12px rgba(0, 0, 0, 0.5);
+}
 .header {
   width: 51.3rem;
   height: auto;
@@ -44,4 +61,67 @@ li a {
 
 .header p {
   color: white;
+}
+
+.featured-project-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding-bottom: 20px;
+  color: #399bd1;
+}
+
+.image-container {
+
+}
+
+.image-container img {
+  opacity: 0.7;
+  width: 100%;
+}
+.blue {
+  color: #399bd1;
+}
+
+.product-categories h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.product-categories span {
+  margin-bottom: 1rem;
+}
+
+.li {
+  line-height: 1.4;
+  color: rgba(0,0,0, 0.7);
+}
+
+.projects {
+  margin-bottom: 5.85rem;
+}
+
+.trouble {
+  background-color: #f3f3f3;
+  padding: 5.2rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.trouble h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: 1.4rem;
+}
+
+.trouble p {
+  width: 42rem;
+}
+
+@media only screen and (max-width: 480px){
+  .header span {
+    font-size: 5.7rem;
+  }
 }
